@@ -8,7 +8,7 @@ private suspend fun operacaoDeIONaoBloqueante(x: Int) {
 }
 
 @OptIn(DelicateCoroutinesApi::class)
-suspend fun main() = withContext(newSingleThreadContext("ThreadUnica")) {
+private suspend fun main() = withContext(newSingleThreadContext("ThreadUnica")) {
 
     // Vou lançar uma corrotina que lança outras 100_000 corrotinas que executam alguma tarefa de I/O
     val diversasCorrotinas = launch {

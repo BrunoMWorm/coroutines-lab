@@ -3,7 +3,7 @@ package exemplos
 import kotlinx.coroutines.*
 
 // Exemplo 3: execução de código assíncrono em background usando launch
-suspend fun main() = coroutineScope {
+private suspend fun main() = coroutineScope {
     println("Lancei uma job periódica")
     val jobPeriodica = launch {
         var i = 0

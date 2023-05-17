@@ -10,7 +10,7 @@ private suspend fun computacaoAssincrona(x: Int): Int {
 
 // Exemplo 1: execução de código assíncrono como se fosse síncrono
 // Em contraste ao Dart, o código aguarda o resultado de funções assíncronas por padrão
-suspend fun main() {
+private suspend fun main() {
     val a = 2
     val b = 3
 
