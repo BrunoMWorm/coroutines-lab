@@ -1,12 +1,11 @@
 package exemplos
 
-import kotlinx.coroutines.delay
+import kotlinx.coroutines.*
 
 private suspend fun computacaoAssincrona(x: Int): Int {
     delay(3_000L)
     return 2 * x
 }
-
 
 // Exemplo 1: execução de código assíncrono como se fosse síncrono
 // Em contraste ao Dart, o código aguarda o resultado de funções assíncronas por padrão
@@ -24,4 +23,3 @@ private suspend fun main() {
 
     println("Soma dos resultados: ${resultadoA + resultadoB}")
 }
-

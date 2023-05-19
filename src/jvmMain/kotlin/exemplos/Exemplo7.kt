@@ -11,7 +11,6 @@ private fun CoroutineScope.lancarTarefaPeriodica(id: String) = this.launch {
     }
 }
 
-
 private suspend fun main() = coroutineScope {
     println("Vamos fazer uma baguncinha...")
 

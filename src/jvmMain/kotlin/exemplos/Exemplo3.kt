@@ -19,4 +19,3 @@ private suspend fun main() = coroutineScope {
 
     jobPeriodica.cancelAndJoin()
 }
-
